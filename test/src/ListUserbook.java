@@ -24,7 +24,7 @@ public class ListUserbook {
     }
 
     public static void displayList(List<Userbook> ub){
-        for (int i =0; i <ub.size(); i++){
+        for (int i = 0; i < ub.size(); i++){
 
             System.out.println("book ID: "+ub.get(i).bookid);
              System.out.println("user ID: "+ub.get(i).userid);
@@ -36,7 +36,7 @@ public class ListUserbook {
 
        
 
-        List<Userbook> list = ub.subList(0,1);
+        List<Userbook> list = ub.subList(0,2);
 
         ListUserbook.displayList(list);
 
