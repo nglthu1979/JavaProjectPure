@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class ListUserbook {
    ArrayList<Userbook> ub = new ArrayList<Userbook>();
@@ -20,5 +21,27 @@ public class ListUserbook {
              System.out.println("user ID: "+ub.get(i).userid);
 
         }
+    }
+
+    public static void displayList(List<Userbook> ub){
+        for (int i =0; i <ub.size(); i++){
+
+            System.out.println("book ID: "+ub.get(i).bookid);
+             System.out.println("user ID: "+ub.get(i).userid);
+
+        }
+    }
+
+    public void shortList(){
+
+       
+
+        List<Userbook> list = ub.subList(0,1);
+
+        ListUserbook.displayList(list);
+
+
+      
+
     }
 }

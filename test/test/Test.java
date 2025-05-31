@@ -16,7 +16,13 @@ public class Test {
          ub.addObject(ub2);
          ub.addObject(ub3);
 
-         ub.displayList();
+        
+
+         System.out.println("test short");
+
+         ub.shortList();
+
+        
 
          
     }
