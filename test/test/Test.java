@@ -1,7 +1,16 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Test {
-    public static void test(){
+    public static void test() {
+
+        // user List
+        User u1 = new User("gfz", "Nguyen Thi Van");
+        User u2 = new User("123333", "tran van Nguyen");
+
+        ListUser listuser = new ListUser();
+        listuser.addUser(u2);
+        listuser.addUser(u1);
 
         System.out.println("test");
         Userbook ub0 = new Userbook("123", "abc");
@@ -10,29 +19,39 @@ public class Test {
         Userbook ub3 = new Userbook("123333", "gfz");
 
         ListUserbook ub = new ListUserbook();
-         
-         ub.addObject(ub0);
-         ub.addObject(ub1);
-         ub.addObject(ub2);
-         ub.addObject(ub3);
 
-        
+        ub.addObject(ub0);
+        ub.addObject(ub1);
+        ub.addObject(ub2);
+        ub.addObject(ub3);
 
-         System.out.println("test short");
+        System.out.println("test short");
 
-         ub.shortList();
-         
+        ub.shortList();
+
         System.out.println("test filter:");
-         ub.displayList(ub.filterUserBook("gfz"));
-         ub.
+        ub.displayList(ub.filterUserBook("gfz"));
+
+        // Userbook filter
+        //List sau khi search
+
+        List<Userbook> listUserbook = ub.filterUserBook("gfz");
 
 
 
+        // Hien thi name
 
         
+        for (int i =0 ; i<listUserbook.size(); i++)
+        {
+         listuser.searchUserName(listUserbook.get(i).userid);
+          listuser.displayList(listuser.searchUserName(listUserbook.get(i).userid));
+        }
+      
 
-        
+       
+       
+       
 
-         
     }
 }
