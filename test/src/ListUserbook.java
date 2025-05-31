@@ -4,6 +4,8 @@ import java.util.List;
 public class ListUserbook {
    ArrayList<Userbook> ub = new ArrayList<Userbook>();
 
+  
+
     public ArrayList<Userbook> addObject(Userbook u){
         
 
@@ -40,8 +42,16 @@ public class ListUserbook {
 
         ListUserbook.displayList(list);
 
-
       
 
     }
+
+    public List<Userbook> filterUserBook(String keyword){
+        List<Userbook> listub = ub.stream().filter(p->p.bookid.contains(keyword) || p.userid.contains(keyword)).toList(); 
+
+        
+        return listub;
+        }
+
+    
 }

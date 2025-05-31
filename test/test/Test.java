@@ -4,7 +4,7 @@ public class Test {
     public static void test(){
 
         System.out.println("test");
-        Userbook ub0 = new Userbook("123", "456");
+        Userbook ub0 = new Userbook("123", "abc");
         Userbook ub1 = new Userbook("1233", "4563");
         Userbook ub2 = new Userbook("12333", "456333");
         Userbook ub3 = new Userbook("123333", "456333");
@@ -21,6 +21,11 @@ public class Test {
          System.out.println("test short");
 
          ub.shortList();
+         
+        System.out.println("test filter:");
+         ub.displayList(ub.filterUserBook("abc"));
+
+        
 
         
 
