@@ -19,12 +19,26 @@ public class ListUser {
 
         }
     }
-
+    //Lamda Expression
     public List<User> searchUserName(String userId) {
 
         List<User> listub = user.stream().filter(p -> p.userId.contains(userId)).toList();
 
         return listub;
+
+    }
+
+    //Cach viet truyen thong
+    public ArrayList<User> searchUserNameTradition(String userId) {
+        ArrayList<User> newList = new ArrayList<User>();
+        for (User u : user) {
+            if (u.userId.contains(userId)) {
+                newList.add(u);
+
+            }
+        }
+
+        return newList;
 
     }
 

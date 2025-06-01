@@ -45,13 +45,14 @@ public class ListUserbook {
       
 
     }
-
+    //Lamda Expression
     public List<Userbook> filterUserBook(String keyword){
         List<Userbook> listub = ub.stream().filter(p->p.bookid.contains(keyword) || p.userid.contains(keyword)).toList(); 
 
         
         return listub;
         }
-
+    //Tradition Expression
+    
     
 }
