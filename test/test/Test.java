@@ -34,10 +34,11 @@ public class Test {
 
         // Userbook filter
         //List sau khi search
+        //search by Lamda expression
+        // List<Userbook> listUserbook = ub.filterUserBook("gfz");
 
-        List<Userbook> listUserbook = ub.filterUserBook("gfz");
-
-
+        //search by Tradition expression
+        List<Userbook> listUserbook = ub.filterUserBookTradition("gfz");
 
         // Hien thi name
 
