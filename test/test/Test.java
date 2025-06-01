@@ -34,8 +34,11 @@ public class Test {
 
         // Userbook filter
         //List sau khi search
+        //search in Lamda expression
+        //List<Userbook> listUserbook = ub.filterUserBook("gfz");
 
-        List<Userbook> listUserbook = ub.filterUserBook("gfz");
+        // search in traidtional expression
+        List<Userbook> listUserbook = ub.filterUserBookTradition("gfz");
 
 
 

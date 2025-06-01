@@ -65,3 +65,14 @@ command pallete / Document Formatter
 ⌥ ⌘ L (macOS) to format just the highlighted code.
 
 ```
+
+# Git
+lethunguyen@Mac JavaProjectPure-main % git config --global user.name "nglthu1979"
+lethunguyen@Mac JavaProjectPure-main % git config --global user.email nglthu1967@gmail.com
+lethunguyen@Mac JavaProjectPure-main % git config --global user.password "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"
+
+
+
+git pull https://nglthu1979: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@github.com/nglthu1979/JavaProjectPure
+
+git pull https://username:password@mygithost.com/my/repository
