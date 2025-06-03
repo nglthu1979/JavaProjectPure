@@ -35,8 +35,8 @@ public class Library{
     }
    // print library
     public static void printBooks(ArrayList<Book> listbooks){
+        System.out.println("Danh sach book voi tac gia hoac Publisher");
         for(Book b : listbooks){
-            System.out.println("Danh sach book voi tac gia hoac Publisher");
             System.out.println(" Book ID: " + b.bookID + " | Book name: " + b.bookName + " | Book Author: " + b.author + " | Book Publisher: " + b.publisher);
 
         }
@@ -47,7 +47,7 @@ public class Library{
         //so luong book theo tac gia
         for(Book b : listbooks){
             if(b.author.toLowerCase().trim().equals(author.toLowerCase().trim())
-            || b.author.contains(author)
+            || b.author.toLowerCase().trim().contains(author)
 
             ){
                 countBookbyAuthor ++;

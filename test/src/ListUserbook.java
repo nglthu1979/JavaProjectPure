@@ -43,7 +43,8 @@ public class ListUserbook {
     }
 
     public List<Userbook> filterUserBook(String keyword) {
-        List<Userbook> listub = ub.stream().filter(p -> p.bookid.contains(keyword) || p.userid.contains(keyword)).toList();
+        List<Userbook> listub = ub.stream().filter(p -> p.bookid.toLowerCase().trim().contains(keyword) || p.userid.toLowerCase()
+                .trim().contains(keyword)).toList();
 
 
         return listub;
