@@ -43,7 +43,7 @@ public class Library{
     }
 
     public static int staticBooks(ArrayList<Book> listbooks, String author){
-        int countBookbyAuthor =0;
+        int countBookbyAuthor = 0;
         //so luong book theo tac gia
         for(Book b : listbooks){
             if(b.author.toLowerCase().trim().equals(author.toLowerCase().trim())
@@ -55,6 +55,8 @@ public class Library{
         }
         return countBookbyAuthor;
     }
+
+    
 
 
 }
