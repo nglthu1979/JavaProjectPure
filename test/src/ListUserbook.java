@@ -46,7 +46,6 @@ public class ListUserbook {
         List<Userbook> listbook = ub.stream().filter(p -> p.bookid.toLowerCase().trim().contains(keyword.toLowerCase().trim()) || p.userid.toLowerCase()
                 .trim().contains(keyword.toLowerCase().trim())).toList();
 
-
         return listbook;
     }
 
@@ -56,11 +55,9 @@ public class ListUserbook {
         for (Userbook u : ub) {
             if (u.bookid.contains(keyword) || u.userid.contains(keyword)) {
                 newList.add(u);
-
             }
         }
         return newList;
-
 
     }
 }

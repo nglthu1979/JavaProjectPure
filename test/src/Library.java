@@ -1,6 +1,8 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Library{
+
     ArrayList<Book> books = new ArrayList<>();
 
     public Library(Book b){
@@ -55,7 +57,16 @@ public class Library{
         }
         return countBookbyAuthor;
     }
+   
+    public static Book getBookInfo(ArrayList<Book> bk, String id){
+           
+        List<Book> lb = bk.stream().filter(p->p.bookID.equals(id));
+            
+            return  lb.getFirst();
+            
 
+        }
+    }
     
 
 
