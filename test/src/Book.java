@@ -13,5 +13,7 @@ public class Book {
         this.ISBN = ISBN;
 
     }
-
+   public void display(){
+        System.out.println("Book Name: " + bookName);
+   }
 }

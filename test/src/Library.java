@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Library{
 
@@ -58,15 +59,15 @@ public class Library{
         return countBookbyAuthor;
     }
    
-    public static Book getBookInfo(ArrayList<Book> bk, String id){
+    public  Book getBookInfo( String id){
            
-        List<Book> lb = bk.stream().filter(p->p.bookID.equals(id));
+        List<Book> lb = books.stream().filter(e -> e.bookID.equals(id)).collect(Collectors.toList());
             
             return  lb.getFirst();
             
 
         }
-    }
+
     
 
 

@@ -97,7 +97,7 @@ public class Test {
         //search in Lamda expression
         //keyword userid or book id
         List<Userbook> listUserbook = ub.filterUserBookLamda(keyword);
-        System.out.println("listUserbook size: " + listUserbook.size());
+        System.out.println("This book has been brrowed by : " + listUserbook.size() + " users");
 
         // search in traditional expression
 
@@ -109,7 +109,13 @@ public class Test {
         for (int i =0 ; i <listUserbook.size(); i++)
         {
          listuser.searchUserName(listUserbook.get(i).userid);
+         //Hien thi username
           listuser.displayList(listuser.searchUserName(listUserbook.get(i).userid));
+
+         //hien thi info book
+            String book_id = listUserbook.get(i).bookid;
+            System.out.println("Borrowed the Book of " +lib1.getBookInfo(book_id).bookName);
+
         }
       
 
@@ -123,6 +129,9 @@ public class Test {
         }
 
 */
+
+      //getBookInfo: return book
+      //input bookid
 
     }
 }
