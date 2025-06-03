@@ -48,7 +48,18 @@ Then Choose a source folder, e.g test
 
 
 ```
+# To do
 
+```
+Display User name of whome borrowed the book (Hiển thị tên người mượn quyển sách cụ thể)
+
++ Display book name by id (Hiển thị tên sách theo ID)
+
++ Display All Book borrowed by User ID or Name (Hiển thị tất cả sách được mượn bởi một bạn đọc cụ thể)
+
++ Display All Books of A Publisher or Author (Hiển thị tất cả sách của một tác gỉa hoặc nhà xuất bản)
+
+```
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
