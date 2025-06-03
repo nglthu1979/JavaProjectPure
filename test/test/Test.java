@@ -61,6 +61,8 @@ public class Test {
         ListUser listuser = new ListUser();
         listuser.addUser(u2);
         listuser.addUser(u1);
+        listuser.addUser(u3);
+        listuser.addUser(u4);
 
         System.out.println("Books borrowed by Users");
         LocalDate currentDate = LocalDate.now();
@@ -94,12 +96,12 @@ public class Test {
         //List sau khi search
         //search in Lamda expression
         //keyword userid or book id
-       // List<Userbook> listUserbook = ub.filterUserBook(keyword);
-       // System.out.println("listUserbook size: " + listUserbook.size());
+        List<Userbook> listUserbook = ub.filterUserBookLamda(keyword);
+        System.out.println("listUserbook size: " + listUserbook.size());
 
         // search in traditional expression
 
-       List<Userbook> listUserbook = ub.filterUserBookTradition(keyword);
+       //List<Userbook> listUserbook = ub.filterUserBookTradition(keyword);
 
         // Hien thi name theo Lamda code
         // todo: ListUserbook: already filtered list with key word

@@ -15,14 +15,14 @@ public class Library{
 
     public ArrayList<Book> getBooks(String author, String publisher){
         ArrayList<Book> filterBooks = new ArrayList<>();
-        String au = author.toLowerCase().trim().replaceAll("\\sc+", "") ;
+        String au = author.toLowerCase().trim();
 
 
-        String pub = publisher.toLowerCase().trim().replaceAll("\\sc+", "");
+        String pub = publisher.toLowerCase().trim();
 
         for(Book b : books) {
-            if (b.author.toLowerCase().trim().replaceAll("\\sc+", "").equals(au) || b.publisher.toLowerCase().trim().replaceAll("\\sc+", "").equals(pub)
-            || b.author.contains(au) || b.publisher.contains(pub)
+            if (b.author.toLowerCase().trim().equals(au) || b.publisher.toLowerCase().trim().equals(pub)
+            || b.author.toLowerCase().trim().contains(au) || b.publisher.toLowerCase().trim().contains(pub)
             ) {
 
                 filterBooks.add(b);
