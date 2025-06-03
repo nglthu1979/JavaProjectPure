@@ -38,7 +38,7 @@ public class Library{
     }
    // print library
     public static void printBooks(ArrayList<Book> listbooks){
-        System.out.println("Danh sach book voi tac gia hoac Publisher");
+
         for(Book b : listbooks){
             System.out.println(" Book ID: " + b.bookID + " | Book name: " + b.bookName + " | Book Author: " + b.author + " | Book Publisher: " + b.publisher);
 

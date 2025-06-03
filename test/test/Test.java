@@ -41,6 +41,7 @@ public class Test {
 
         //check here 2 conditions to add book
         lib1.getBooks(author, publisher);
+        System.out.println("(List of Book Search) Danh sach Books voi tac gia " + author + "hoac nha xuat ban "+ publisher + "duoc tim kiem");
         Library.printBooks(lib1.getBooks(author, publisher));
 
         //thong ke: So luong sach theo tac gia vua nhap
@@ -85,7 +86,7 @@ public class Test {
 
 
 
-        System.out.println("Test filter book by any keyword matching to user id or userbook:");
+        System.out.println("Filter books by any keyword matching to user id or book id::");
 
         String keyword = UserInput.inputString("keyword");
         System.out.println("keyword : " + keyword);
