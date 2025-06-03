@@ -13,8 +13,6 @@ public class ListUserbook {
 
     }
 
-    ;
-
 
     public void displayList() {
         for (int i = 0; i < ub.size(); i++) {
