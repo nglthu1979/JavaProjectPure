@@ -52,8 +52,8 @@ public class ListUserbook {
     public ArrayList<Userbook> filterUserBookTradition(String keyword) {
         ArrayList<Userbook> newList = new ArrayList<Userbook>();
 
-        for (Userbook u : ub) {
-            if (u.bookid.contains(keyword) || u.userid.contains(keyword)) {
+        for (Userbook p : ub) {
+            if (p.bookid.contains(keyword) || p.userid.contains(keyword)) {
                 newList.add(u);
             }
         }
