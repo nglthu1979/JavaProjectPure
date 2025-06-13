@@ -1,6 +1,6 @@
 ## Getting Started
 
-Test Logic Objects and Relations Of Objects
+Test Logics of Objects and Relations Of Objects
 
 
 
