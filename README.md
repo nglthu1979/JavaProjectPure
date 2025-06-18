@@ -56,6 +56,7 @@ Then Choose a source folder, e.g test
 
 
 ```
+<img src="https://nglthu.github.io/webDocuments/img/classpath.png"/>
 
 ## Dependency Management
 
