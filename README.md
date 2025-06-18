@@ -39,10 +39,16 @@ The workspace contains two folders by default, where:
 - `lib`: the folder to maintain dependencies
 - `test`: the folder to maintain test
 
+```
 If ClassPath is broken Configure in Java Projects by
 add test in the Path
 
-```
+in the option of Configure Classpath
+Source Paths
++ Add Source Root...
+  
+
+
 Under Java Projects Name
 The same level src
 Add by (+) choose Package
